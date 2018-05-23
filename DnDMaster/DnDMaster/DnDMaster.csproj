@@ -59,6 +59,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BackEnd\GameLogic\Character.cs" />
+    <Compile Include="BackEnd\GameLogic\Game.cs" />
+    <Compile Include="BackEnd\GameLogic\TraitsList.cs" />
+    <Compile Include="BackEnd\Races\ERaces.cs" />
+    <Compile Include="BackEnd\Races\RacesUtils.cs" />
+    <Compile Include="Screens\CharacterCreationScreen.xaml.cs">
+      <DependentUpon>CharacterCreationScreen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screens\StartScreen.xaml.cs">
       <DependentUpon>StartScreen.xaml</DependentUpon>
     </Compile>
@@ -92,6 +100,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Page Include="Screens\CharacterCreationScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Screens\StartScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

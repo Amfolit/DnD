@@ -15,19 +15,15 @@ using System.Windows.Shapes;
 namespace DnDMaster.Screens
 {
     /// <summary>
-    /// Interaction logic for StartScreen.xaml
+    /// Interaction logic for CharacterCreationScreen.xaml
     /// </summary>
-    public partial class StartScreen : Window
+    public partial class CharacterCreationScreen : Window
     {
-        public StartScreen()
+        public int NumberOfPlayers { get; set; }
+
+        public CharacterCreationScreen()
         {
             InitializeComponent();
-        }
-
-        private void StartBtn_Click(object sender, RoutedEventArgs e)
-        {
-            var dialog = new CharacterCreationScreen();
-            dialog.ShowDialog();
         }
     }
 }

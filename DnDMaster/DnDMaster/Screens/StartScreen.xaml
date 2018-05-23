@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DnDMaster.Screens"
         mc:Ignorable="d"
-        Title="StartScreen" Height="300" Width="300">
+        Title="StartScreen" Height="500" Width="750">
     <Grid>
-        
+        <Button x:Name="StartBtn" Content="Start Game" HorizontalAlignment="Center" Margin="274,112,270,290" VerticalAlignment="Center" Width="198" Height="67" Click="StartBtn_Click"/>
+        <Frame x:Name="frame" Content="" HorizontalAlignment="Left" Height="70" Margin="227,202,0,0" VerticalAlignment="Top" Width="300" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" RenderTransformOrigin="-0.183,-0.114"/>
+        <Label x:Name="label" Content="Numar de Bajeti" HorizontalAlignment="Left" Height="23" Margin="259,229,0,0" VerticalAlignment="Top" Width="103"/>
+        <TextBox x:Name="NumberOfPlayersTextBox" HorizontalAlignment="Left" Height="23" Margin="416,229,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="70"/>
     </Grid>
 </Window>
