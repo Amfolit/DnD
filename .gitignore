@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DnDMaster/DnDMaster/obj/Debug
+/DnDMaster/DnDMaster/bin/Debug
+/DnDMaster/.vs/DnDMaster/v14

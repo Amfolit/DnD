@@ -1,0 +1,10 @@
+﻿<Application x:Class="DnDMaster.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DnDMaster"
+             xmlns:screens="clr-namespace:DnDMaster.Screens"
+             StartupUri="Screens/StartScreen.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
