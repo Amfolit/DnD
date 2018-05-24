@@ -10,7 +10,6 @@ namespace DnDMaster.BackEnd.Classes
     {
         public static void SetClass(GameLogic.Character character, Class clas)
         {
-            character.SpecClass = clas;
             switch (clas)
             {
                 case Class.Tank:

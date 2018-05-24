@@ -20,10 +20,12 @@ namespace DnDMaster.Screens
     public partial class CharacterCreationScreen : Window
     {
         public int NumberOfPlayers { get; set; }
-
+        public int NumberOfCreatedPlayers {get;set;}
         public CharacterCreationScreen()
         {
             InitializeComponent();
+            NumberOfPlayers = 4;
+            NumberOfCreatedPlayers = 0;
         }
     }
 }

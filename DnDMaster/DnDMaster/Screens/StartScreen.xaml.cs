@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DnDMaster.BackEnd.GameLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,12 @@ namespace DnDMaster.Screens
         public StartScreen()
         {
             InitializeComponent();
+            Character test = new Character();
+            test.SpecClass = BackEnd.Classes.Class.Despacito;
+            test.Racial = BackEnd.Races.Race.BeastFolk;
+
+            test.ToString();
+            
         }
 
         private void StartBtn_Click(object sender, RoutedEventArgs e)

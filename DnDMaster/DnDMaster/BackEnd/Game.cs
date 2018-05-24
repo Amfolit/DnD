@@ -10,6 +10,7 @@ namespace DnDMaster.BackEnd.GameLogic
     {
 
         public List<Character> CharacterList;
+        public string Map; // TODO
 
         private static Game instance;
         public static Game Instance

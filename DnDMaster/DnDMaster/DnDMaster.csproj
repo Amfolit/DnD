@@ -59,11 +59,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BackEnd\GameLogic\Character.cs" />
-    <Compile Include="BackEnd\GameLogic\Game.cs" />
-    <Compile Include="BackEnd\GameLogic\TraitsList.cs" />
+    <Compile Include="BackEnd\Classes\Class.cs" />
+    <Compile Include="BackEnd\Classes\ClassUtils.cs" />
+    <Compile Include="BackEnd\Character\Character.cs" />
+    <Compile Include="BackEnd\Game.cs" />
+    <Compile Include="BackEnd\Character\TraitsList.cs" />
     <Compile Include="BackEnd\Races\ERaces.cs" />
     <Compile Include="BackEnd\Races\RacesUtils.cs" />
+    <Compile Include="ScreenClasses\CharacterCreationClass.cs" />
     <Compile Include="Screens\CharacterCreationScreen.xaml.cs">
       <DependentUpon>CharacterCreationScreen.xaml</DependentUpon>
     </Compile>
@@ -108,6 +111,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\StartBackGround.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -11,7 +11,6 @@ namespace DnDMaster.BackEnd.Races
     {
         public static void SetRace(GameLogic.Character character, Race race)
         {
-            character.Racial = race;
             switch (race)
             {
                 case Race.Human:

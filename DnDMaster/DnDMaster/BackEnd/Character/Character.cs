@@ -11,6 +11,8 @@ namespace DnDMaster.BackEnd.GameLogic
     public class Character
     {
 
+        public string Name { get; set; }
+
         public int Int { get; set; }
         public int Str { get; set; }
         public int Dex { get; set; }
@@ -26,6 +28,7 @@ namespace DnDMaster.BackEnd.GameLogic
             }
             set
             {
+                racial = value;
                 RacesUtils.SetRace(this, value);
             }
         }
@@ -39,7 +42,8 @@ namespace DnDMaster.BackEnd.GameLogic
             }
             set
             {
-                Class.SetClass(this, value);
+                specClass = value;
+                ClassUtils.SetClass(this, value);
             }
         }
 
@@ -56,6 +60,7 @@ namespace DnDMaster.BackEnd.GameLogic
         private void SetBase()
         {
             Int = Dex = Str = Chr = Luck = Perc = 2;
+            Health = 40;
         }
     }
 }

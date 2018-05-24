@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DnDMaster.Screens"
         mc:Ignorable="d"
-        Title="CharacterCreationScreen" Height="500.0" Width="580.147">
+        Title="CharacterCreationScreen" Height="768" Width="1366"
+        WindowState="Maximized"
+        WindowStyle="None">
     <Grid Margin="0,0,0,0">
 
     </Grid>
