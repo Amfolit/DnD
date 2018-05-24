@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DnDMaster.BackEnd.GameLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,7 @@ namespace DnDMaster.BackEnd.Races
                     character.Health = character.Health + 10;
                     break;
                 case Race.BeastFolk:
-                    // TODO
+                    character.TraitList.Add(TraitsList.Traits[1]);
                     break;
                 case Race.Dwarf:
                     //TODO

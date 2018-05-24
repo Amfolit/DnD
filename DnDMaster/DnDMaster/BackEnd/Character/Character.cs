@@ -1,4 +1,5 @@
-﻿using DnDMaster.BackEnd.Races;
+﻿using DnDMaster.BackEnd.Classes;
+using DnDMaster.BackEnd.Races;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,13 +30,32 @@ namespace DnDMaster.BackEnd.GameLogic
             }
         }
 
+        Class specClass;
+        public Class SpecClass
+        {
+            get
+            {
+                return specClass;
+            }
+            set
+            {
+                Class.SetClass(this, value);
+            }
+        }
+
         public int Health { get; set; }
 
-        public List<TraitsList> TraitList;
+        public List<Trait> TraitList;
 
         public Character()
         {
-            TraitList = new List<TraitsList>();
+            SetBase();
+            TraitList = new List<Trait>();
+        }
+
+        private void SetBase()
+        {
+            Int = Dex = Str = Chr = Luck = Perc = 2;
         }
     }
 }
